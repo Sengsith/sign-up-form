@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --sidebar-width: 35%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  background-image: url(./img/kiana-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: var(--sidebar-width);
+  color: white;
+  font-size: 2rem;
+}
+
+.logo-container {
+  margin-top: 10rem;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.registration-panel {
+  flex: 1 0 0;
+  background-color: hsl(220, 16%, 96%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.registration-panel > * {
+  padding: 1rem 2rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.form {
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  margin-bottom: 1.5rem;
+  box-shadow: 1px 5px 5px 0px rgba(166, 159, 166, 1);
+  padding-block: 2rem;
+}
+
+h2 {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  max-width: 50rem;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 5rem;
+}
+
+.form-pair {
+  flex: 0 1 17rem;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+input {
+  padding: 0.25rem;
+  display: block;
+  width: 100%;
+}
+
+.create-acc-btn {
+  margin-left: 2rem;
+  color: white;
+  background-color: #596d48;
+  border-radius: 0.75rem;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+}
+.create-acc-btn:hover {
+  cursor: pointer;
+}
+
+a {
+  color: #596d48;
+  text-decoration: none;
+}

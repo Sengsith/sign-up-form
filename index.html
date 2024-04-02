@@ -4,38 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form</title>
+    <link
+      rel="shortcut icon"
+      href="https://honkaiimpact3.hoyoverse.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="sidebar">
-      <div class="logo">Honkai Impact 3rd</div>
+      <div class="logo-container">
+        <img
+          src="https://webstatic.hoyoverse.com/upload/event/2021/12/29/eaa64d81ae6a7318a6afb91cbffd83a4_118924438105936743.png"
+          alt="hoyoverse"
+        />
+        <div class="logo">Honkai Impact 3rd</div>
+      </div>
     </div>
     <div class="registration-panel">
-      <p>
+      <p class="intro-text">
         Dive into stunning anime action in Honkai Impact 3rd! Wield powerful weapons, master unique
-        characters, and fight to save humanity against a catastrophic invasion. Sign up now to
+        characters, and fight to save humanity against a catastrophic invasion.<br />Sign up now to
         join!<br /><br />You <em>know</em> you want to.
       </p>
-      <form action="" method="post">
+      <form class="form" action="" method="post">
         <h2>Join the fight!</h2>
-        <label for="first-name">First Name</label>
-        <input type="text" name="first-name" id="first-name" placeholder="First" />
-        <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="last-name" placeholder="Last" />
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="email@domain.com" />
-        <label for="phone-number">Phone Number</label>
-        <input type="tel" name="phone-number" id="phone-number" placeholder="123-456-7890" />
-        <label for="password" Password>Password</label>
-        <input type="text" name="password" id="password" placeholder="Password" />
-        <label for="confirm-password">Confirm Password</label>
-        <input
-          type="pasword"
-          name="confirm-password"
-          id="confirm-password"
-          placeholder="Password"
-        />
+        <div class="input-container">
+          <div class="form-pair">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="First" />
+          </div>
+          <div class="form-pair">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Last" />
+          </div>
+          <div class="form-pair">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email@domain.com" />
+          </div>
+          <div class="form-pair">
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" name="phone-number" id="phone-number" placeholder="123-456-7890" />
+          </div>
+          <div class="form-pair">
+            <label for="password" Password>Password</label>
+            <input type="text" name="password" id="password" placeholder="Password" />
+          </div>
+          <div class="form-pair">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="pasword"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="Password"
+            />
+          </div>
+        </div>
       </form>
-      <button type="submit">Create Account</button>
+      <button class="create-acc-btn" type="submit">Create Account</button>
       <p>Already have an account? <a href="#">Log in</a></p>
     </div>
   </body>
