@@ -28,7 +28,7 @@
         characters, and fight to save humanity against a catastrophic invasion.<br />Sign up now to
         join!<br /><br />You <em>know</em> you want to.
       </p>
-      <form class="form" action="" method="post">
+      <form id="form" action="" method="post">
         <h2>Join the fight!</h2>
         <div class="input-container">
           <div class="form-pair">
@@ -58,11 +58,13 @@
             <input
               type="password"
               name="password"
+              class="password-input"
               id="password"
               placeholder="Password"
-              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
-              minlength="8"
-              maxlength="12"
+              title="Password must be at least 6 characters long but no longer than 16 characters."
+              pattern="[A-Za-z0-9]{6,16}"
+              minlength="6"
+              maxlength="16"
               required
             />
           </div>
@@ -71,17 +73,19 @@
             <input
               type="password"
               name="confirm-password"
+              class="password-input"
               id="confirm-password"
               placeholder="Password"
-              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
-              minlength="8"
-              maxlength="12"
+              title="Password must match."
+              pattern="[A-Za-z0-9]{6,16}"
+              minlength="6"
+              maxlength="16"
               required
             />
           </div>
         </div>
       </form>
-      <button class="create-acc-btn" type="submit">Create Account</button>
+      <button class="create-acc-btn" type="submit" form="form">Create Account</button>
       <p>Already have an account? <a href="#">Log in</a></p>
     </div>
   </body>

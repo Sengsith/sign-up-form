@@ -55,7 +55,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.form {
+#form {
   width: 100%;
   background-color: hsl(0, 0%, 100%);
   margin-bottom: 1.5rem;
@@ -103,8 +103,15 @@ input:focus {
   outline: 2px solid hsl(240, 100%, 68%);
   box-shadow: 1px 5px 5px 0px hsl(300, 4%, 64%);
 }
-.has-focused:invalid {
+.has-blurred:invalid,
+.password-mismatch {
   outline: 1px solid red;
+}
+.password-warning::after {
+  content: "* Passwords do not match";
+  display: block;
+  color: red;
+  font-size: 0.8rem;
 }
 
 .create-acc-btn {
