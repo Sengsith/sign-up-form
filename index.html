@@ -10,6 +10,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="sidebar">
@@ -32,7 +33,7 @@
         <div class="input-container">
           <div class="form-pair">
             <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name" placeholder="First" />
+            <input type="text" name="first-name" id="first-name" placeholder="First" required />
           </div>
           <div class="form-pair">
             <label for="last-name">Last Name</label>
@@ -40,23 +41,42 @@
           </div>
           <div class="form-pair">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="email@domain.com" />
+            <input type="email" name="email" id="email" placeholder="email@domain.com" required />
           </div>
           <div class="form-pair">
             <label for="phone-number">Phone Number</label>
-            <input type="tel" name="phone-number" id="phone-number" placeholder="123-456-7890" />
+            <input
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+              placeholder="123-456-7890"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
           </div>
           <div class="form-pair">
             <label for="password" Password>Password</label>
-            <input type="text" name="password" id="password" placeholder="Password" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+              minlength="8"
+              maxlength="12"
+              required
+            />
           </div>
           <div class="form-pair">
             <label for="confirm-password">Confirm Password</label>
             <input
-              type="pasword"
+              type="password"
               name="confirm-password"
               id="confirm-password"
               placeholder="Password"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+              minlength="8"
+              maxlength="12"
+              required
             />
           </div>
         </div>
